@@ -27,11 +27,18 @@ Rails plugin to allow GOV.UK standard three-box date fields
 
 Available from [GitHub](https://github.com/ministryofjustice/gov_uk_date_fields)
 
+## Python
+
+### Postcode service client
+
+Python package providing an API client for Postcode Service [https://github.com/ministryofjustice/postcodeinfo-client-python](https://github.com/ministryofjustice/postcodeinfo-client-python)
+
 ## Ruby
 
 ### Postcode service client
 
-Ruby gem providing an API client for [https://github.com/ministryofjustice/postcodeinfo](https://github.com/ministryofjustice/postcodeinfo)
+Ruby gem providing an API client for Postcode Service [https://github.com/ministryofjustice/postcodeinfo-client-ruby](https://github.com/ministryofjustice/postcodeinfo-client-ruby)
+
 
 ## Service
 
