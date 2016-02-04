@@ -4,6 +4,13 @@ A place to publish reusable components/tools at MoJ.  Please add your
 own in the appropriate section. If you don't see the appropriate
 section, please create one.
 
+## Django
+
+### django-moj-irat
+Tools to support adding a Django-based service to Ministry of Justice's Incidence Response and Tuning
+
+[https://github.com/ministryofjustice/django-moj-irat](https://github.com/ministryofjustice/django-moj-irat)
+
 ## Rails
 
 ### GOV UK style gem
