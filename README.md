@@ -6,10 +6,20 @@ section, please create one.
 
 ## Django
 
+### django-form-error-reporting
+A form mixin that reports form errors as events to Google Analytics
+
+[https://github.com/ministryofjustice/django-form-error-reporting](https://github.com/ministryofjustice/django-form-error-reporting)
+
 ### django-moj-irat
 Tools to support adding a Django-based service to Ministry of Justice's Incidence Response and Tuning
 
 [https://github.com/ministryofjustice/django-moj-irat](https://github.com/ministryofjustice/django-moj-irat)
+
+### django-zendesk-tickets
+Feedback form that submits to Zendesk
+
+[https://github.com/ministryofjustice/django-zendesk-tickets](https://github.com/ministryofjustice/django-zendesk-tickets)
 
 ## Rails
 
