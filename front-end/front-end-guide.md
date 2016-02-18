@@ -4,12 +4,13 @@ This document provides hands-on guidance for people wishing to build an MOJ site
 
 The instructions above assume that an initial Rails or Django has been set up, and explain what modifications need to be done to use the MOJ design.
 
-TODO: internal sites
 TODO: other frameworks - all manual
 TODO: moj_elements
 TODO: govuk_frontend_toolkit
 
-## If you're using Rails
+## Public-facing services
+
+### If you're using Rails
 
 Once you (or your back-end dev) have your Rails app set up, do the following:
 
@@ -22,7 +23,7 @@ then you can can use the `moj_template` template in your templates. Eg:
 
     <%= render template: 'layouts/moj_template' %>
 
-## Django
+### Django
 
 Once you (or your back-end dev) have your Django app set up, do the following:
 
@@ -54,6 +55,18 @@ The above gives you the header and footer. What's in between is styled with the 
     npm install govuk-elements-sass
 
 or by copying the files manually to another location. In both cases you will have to compile the sass (commonly done with gulp or grunt) and configure django to find the compiled CSS. Once that's done you can refer to the design documentation in http://govuk-elements.herokuapp.com/.
+
+
+## Non-public-facing sites
+
+Non-public-facing sites can be for MOJ staff only, or for law professionals, or court staff. As the example banners below show, there isn't one design and it's currently up to your designer to find what's best for the site's purpose.
+
+That's why there's currently no package that you can use, and the best you can do is to use moj_template as described above and override the templates for the headers (the footers are usually the same as public-facing sites).
+
+[![PQs](images/pq-tracker.png)](https://trackparliamentaryquestions.service.gov.uk/)
+[![Cashbook](images/digital-cashbook.png)](https://cashbook.moneytoprisoners.dsd.io/)
+[![Intranet](images/intranet.png)](https://intranet.justice.gov.uk/)
+[![Peoplefinder](images/people-finder.png)](https://peoplefinder.service.gov.uk/)
 
 ## What's what?
 
