@@ -51,7 +51,7 @@ Ruby gem providing an API client for Postcode Service [https://github.com/minist
 
 ## Generic front-end GOVUK resources
 
-See the [Front-end Guide](front-end-guide.md)
+See the [Front-end Guide](front-end)
 
 ## Service
 
