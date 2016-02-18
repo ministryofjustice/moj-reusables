@@ -51,26 +51,7 @@ Ruby gem providing an API client for Postcode Service [https://github.com/minist
 
 ## Generic front-end GOVUK resources
 
-### govuk_elements
-
-https://github.com/alphagov/govuk_elements
-
-Contains the "official" implementation of the [GOV.UK design elements](http://github.com/alphagov/govuk_elements). Maintained by GDS.
-
-This repository is usable directly by copying its assets directly in your application.
-
-The [prototype kit](https://github.com/alphagov/govuk_prototype_kit) allows creating quick node.js sites using the elements.
-
-### MoJ elements
-
-https://github.com/ministryofjustice/moj_template
-
-This includes assets specific to MOJ services (headers and footers). It's available for Django, Rails, and more.
-
-### mojular
-
-[Mojular](https://github.com/mojular) is a rewrite of the GOV.UK elements and MoJ elements. It's well documented and can be integrated directly in Django, Rails, etc. but doesn't depend on the framework's asset pipeline (it's packaged as a node.js module). A major drawback is that because it doesn't incorporate govuk_elements, any changes made to it by GDS must be implemented in mojular. Getting-started instructions can be found at https://github.com/mojular/examples and documentation is at http://mojular.github.io/examples/
-
+See the [Front-end Guide](front-end-guide.md)
 
 ## Service
 
