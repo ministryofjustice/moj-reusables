@@ -8,7 +8,17 @@ TODO: other frameworks - all manual
 TODO: moj_elements
 TODO: govuk_frontend_toolkit
 
-## Public-facing services
+## Reading list
+
+We strongly encourage front-end developers to be familiar with the following documents:
+
+- The [Government Service Design Manual](https://www.gov.uk/service-manual), specifically the sections on [accessibility testing](https://www.gov.uk/service-manual/user-centred-design/user-research/accessibility-testing.html), [analytics tools](https://www.gov.uk/service-manual/making-software/analytics-tools.html), [progressive enhancement](https://www.gov.uk/service-manual/making-software/progressive-enhancement.html), [testing code](https://www.gov.uk/service-manual/making-software/code-testing.html), [accessibility](https://www.gov.uk/service-manual/user-centred-design/accessibility.html), [GOV.UK header and footer](https://www.gov.uk/service-manual/user-centred-design/resources/header-footer.html).
+- The [GOV.UK elements](http://govuk-elements.herokuapp.com/)
+- [Design patterns](https://www.gov.uk/service-manual/user-centred-design/resources/patterns/index.html)
+- The various assessment reports that the Digital Accessibility Centre has produced for specific MoJ services, linked to from the [Accessibility Issues](https://docs.google.com/document/d/1r9ZG43n8lX-v_70kzPEqPMhlO1ZUUAG8KhFrPUOKxWY/edit#heading=h.qeuhb8462kqm) page.
+
+
+## Creating Public-facing services
 
 ### If you're using Rails
 
@@ -57,7 +67,7 @@ The above gives you the header and footer. What's in between is styled with the 
 or by copying the files manually to another location. In both cases you will have to compile the sass (commonly done with gulp or grunt) and configure django to find the compiled CSS. Once that's done you can refer to the design documentation in http://govuk-elements.herokuapp.com/.
 
 
-## Non-public-facing sites
+## Creating Non-public-facing sites
 
 Non-public-facing sites can be for MOJ staff only, or for law professionals, or court staff. As the example banners below show, there isn't one design and it's currently up to your designer to find what's best for the site's purpose.
 
