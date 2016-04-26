@@ -23,19 +23,17 @@ Feedback form that submits to Zendesk
 
 ## Rails
 
-### GOV UK style gem
+### GOV.UK elements stylesheets gem
 
-A gem wrapper around
-[http://github.com/alphagov/govuk_elements](http://github.com/alphagov/govuk_elements)
-that pulls stylesheet and javascript files into a Rails app.
+Use the [GOV.UK elements gem](https://github.com/ministryofjustice/govuk_elements_rails) to pull GDS's [govuk_elements](http://github.com/alphagov/govuk_elements) stylesheets and javascript files into a Rails app.
 
-https://github.com/ministryofjustice/govuk_elements_rails
+### GOV.UK elements form builder gem
+
+You can use [GOV.UK elements form builder](https://github.com/ministryofjustice/govuk_elements_form_builder) helper methods to develop GOV.UK elements styled form applications in Rails.
 
 ### Date field gem
 
-Rails plugin to allow GOV.UK standard three-box date fields
-
-Available from [GitHub](https://github.com/ministryofjustice/gov_uk_date_fields)
+Use the [date field Rails plugin](https://github.com/ministryofjustice/gov_uk_date_fields) to add GOV.UK standard three-box date fields to forms.
 
 ## Python
 
