@@ -4,8 +4,6 @@ This document provides hands-on guidance for people wishing to build an MOJ site
 
 The instructions above assume that an initial Rails or Django has been set up, and explain what modifications need to be done to use the MOJ design.
 
-TODO: other frameworks - all manual
-TODO: moj_elements
 TODO: govuk_frontend_toolkit
 
 ## Reading list
@@ -26,12 +24,18 @@ Once you (or your back-end dev) have your Rails app set up, do the following:
 
 open `Gemfile` and add to it:
 
-    gem 'govuk_elements_rails'
-    gem 'moj_template'
+```ruby
+gem 'govuk_template'
+gem 'govuk_frontend_toolkit'
+gem 'govuk_elements_rails'
+gem 'govuk_elements_form_builder', git: 'https://github.com/ministryofjustice/govuk_elements_form_builder.git'
+gem 'gov_uk_date_fields'
+```
+then you can can use the `govuk_template` template in your templates. Eg:
 
-then you can can use the `moj_template` template in your templates. Eg:
-
-    <%= render template: 'layouts/moj_template' %>
+```ruby
+<%= render template: 'layouts/govuk_template' %>
+```    
 
 ### Django
 
@@ -39,21 +43,28 @@ Once you (or your back-end dev) have your Django app set up, do the following:
 
 open `requirements.txt` and add to it:
 
-    django-moj-template==0.23.1
+```
+django-moj-template==0.23.1
+```
 
 and at the top of your template files, add:
 
-    {% extends 'moj_template/base.html' %}
-
+```python
+{% extends 'moj_template/base.html' %}
+```
 Run
 
-    pip install -r requirements.txt
+```python
+pip install -r requirements.txt
+```
 
 Now you can add your content as:
 
-    {% block content %}
-    <h1> My page </h1>
-    {% endblock %}
+```python
+{% block content %}
+<h1> My page </h1>
+{% endblock %}
+```
 
 See [django_processor.rb](https://github.com/ministryofjustice/moj_template/blob/master/build_tools/compiler/django_processor.rb) to find the types of blocks you can add content to.
 
@@ -62,7 +73,9 @@ Finally, set up a [configuration file](https://github.com/ministryofjustice/moj_
 
 The above gives you the header and footer. What's in between is styled with the `govuk elements`. The [SASS stylesheets](https://github.com/alphagov/govuk_elements/tree/master/public/sass) are on the github repo. Unfortunately the govuk_elements aren't packaged for Django, so you'll have to do it manually. Either using npm:
 
-    npm install govuk-elements-sass
+```
+npm install govuk-elements-sass
+```
 
 or by copying the files manually to another location. In both cases you will have to compile the sass (commonly done with gulp or grunt) and configure django to find the compiled CSS. Once that's done you can refer to the design documentation in http://govuk-elements.herokuapp.com/.
 
@@ -80,9 +93,9 @@ That's why there's currently no package that you can use, and the best you can d
 
 ## What's what?
 
-### MOJ Template
+### GOV.UK Template
 
-The [moj_template](https://github.com/ministryofjustice/moj_template) repository contains the main templates and styles to generate pages with the MOJ style (mostly headers and footers)
+The [govuk_template](https://github.com/alphagov/govuk_template) repository contains the main templates and styles to generate pages with the GOV.UK style (mostly headers and footers)
 
 The README file contains instructions on how to generate the assets, depending on the framework you use. If you use Rails or Django you'll just need to add a line to your Gemfile or your requirements.txt. Otherwise, clone the repo and copy the JS/PNG/SASS files where you need them to be.
 
@@ -95,6 +108,17 @@ The README file contains instructions on how to generate the assets, depending o
 
 [govuk_frontend_toolkit](https://github.com/alphagov/govuk_frontend_toolkit) contains further scripts and stylesheets. While originally applying to applications built by GDS, they can be used elsewhere (but aren't mandatory). If you use Rails or npm, there are packages you can use directly in your Gemfile or packages.json, respectively. See the repo's README file.
 
-### mojular
+### MOJ Template (Obsolete)
+
+**NOTE: This gem should not be used instead just use [GOV.UK Template](https://github.com/alphagov/govuk_template) and replace the logo with MOJ logo**
+
+The [moj_template](https://github.com/ministryofjustice/moj_template) repository contains the main templates and styles to generate pages with the MOJ style (mostly headers and footers)
+
+The README file contains instructions on how to generate the assets, depending on the framework you use. If you use Rails or Django you'll just need to add a line to your Gemfile or your requirements.txt. Otherwise, clone the repo and copy the JS/PNG/SASS files where you need them to be.
+
+
+### mojular (Obsolete)
+
+**NOTE: This is not officially supported and not being maintained**
 
 [Mojular](https://github.com/mojular) is a rewrite of the GOV.UK elements and MoJ elements. It's well documented and can be integrated directly in Django, Rails, etc. but doesn't depend on the framework's asset pipeline (it's packaged as a node.js module). A major drawback is that because it doesn't incorporate govuk_elements, any changes made to it by GDS must be implemented in mojular. Getting-started instructions can be found at https://github.com/mojular/examples and documentation is at http://mojular.github.io/examples/
