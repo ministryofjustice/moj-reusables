@@ -62,3 +62,10 @@ See the [Front-end Guide](front-end)
 REST API for looking up a given UK Postcode and getting addresses, lat/long, and local authority info
 
 Available from [https://github.com/ministryofjustice/postcodeinfo](https://github.com/ministryofjustice/postcodeinfo)
+
+### Malware scanning service
+
+A pair of docker containers, and a docker compose file, that provides a REST(ish) interface to a ClamAV malware scanner service
+
+Available from [https://github.com/ministryofjustice/malware-scanner-service](https://github.com/ministryofjustice/malware-scanner-service)
+
