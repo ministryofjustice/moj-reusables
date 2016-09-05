@@ -53,7 +53,7 @@ Ruby gem providing an API client for Postcode Service [https://github.com/minist
 
 ### String Scrubber
 
-Ruby gem that prevents `#to_json` calls on ASCII strings that have been incorrectly re-encoded from borking the the calling application (mainly happens because of the UTF BOM-Byte Order Mark). [https://github.com/ministryofjustice/string_scrubber](https://github.com/ministryofjustice/string_scrubber)
+Ruby gem that prevents `#to_json` calls on ASCII strings that have been incorrectly re-encoded from borking the calling application (mainly happens because of the UTF BOM-Byte Order Mark). [https://github.com/ministryofjustice/string_scrubber](https://github.com/ministryofjustice/string_scrubber)
 
 ## Generic front-end GOVUK resources
 
