@@ -35,6 +35,10 @@ You can use [GOV.UK elements form builder](https://github.com/ministryofjustice/
 
 Use the [date field Rails plugin](https://github.com/ministryofjustice/gov_uk_date_fields) to add GOV.UK standard three-box date fields to forms.
 
+### GOV.UK Payment Gateway API client gem
+
+Use the [GOV.UK Payment Gateway API client gem](https://github.com/ministryofjustice/govuk-pay-api-client) to simplify building apps that need to accept payments using the GOV.UK Payment Gateway.
+
 ### GLiMR API client gem
 
 Use the [GLiMR API client gem](https://github.com/ministryofjustice/glimr-api-client) to simplify building apps that talk to the GLiMR case management system (in use in several UK tribunals).
