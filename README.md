@@ -23,6 +23,10 @@ Feedback form that submits to Zendesk
 
 ## Rails
 
+### MoJ Rails 5 template (simple)
+
+Use the [MoJ Rails 5 template](https://github.com/ministryofjustice/moj_rails_template) to commission a licensed Rails 5 project with 100% SimpleCov coverage, RSpec, mutation testing, brakeman, rubocop, optional documentary comment scrubbing, a CircleCI configuration, etc. 
+
 ### GOV.UK elements stylesheets gem
 
 Use the [GOV.UK elements gem](https://github.com/ministryofjustice/govuk_elements_rails) to pull GDS's [govuk_elements](http://github.com/alphagov/govuk_elements) stylesheets and javascript files into a Rails app.
