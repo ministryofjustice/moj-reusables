@@ -66,6 +66,8 @@ The above gives you the header and footer. What's in between is styled with the 
 
 or by copying the files manually to another location. In both cases you will have to compile the sass (commonly done with gulp or grunt) and configure django to find the compiled CSS. Once that's done you can refer to the design documentation in http://govuk-elements.herokuapp.com/.
 
+**TODO:** document [django-gov](https://github.com/ministryofjustice/django-gov)
+
 
 ## Creating Non-public-facing sites
 
