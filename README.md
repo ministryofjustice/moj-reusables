@@ -54,9 +54,17 @@ Use the [GLiMR API client gem](https://github.com/ministryofjustice/glimr-api-cl
 
 ## Python
 
+### Bank holidays
+
+Python package for loading bank holidays from GOV.UK: [ministryofjustice/govuk-bank-holidays](https://github.com/ministryofjustice/govuk-bank-holidays)
+
 ### Postcode service client
 
 Python package providing an API client for Postcode Service [https://github.com/ministryofjustice/postcodeinfo-client-python](https://github.com/ministryofjustice/postcodeinfo-client-python)
+
+### Register client
+
+Python package for reading [Open Register](http://www.openregister.org/) data curated by GDS: [ministryofjustice/openregister-client](https://github.com/ministryofjustice/openregister-client)
 
 ## Ruby
 
@@ -85,4 +93,3 @@ Available from [https://github.com/ministryofjustice/postcodeinfo](https://githu
 A pair of docker containers, and a docker compose file, that provides a REST(ish) interface to a ClamAV malware scanner service
 
 Available from [https://github.com/ministryofjustice/malware-scanner-service](https://github.com/ministryofjustice/malware-scanner-service)
-
