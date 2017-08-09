@@ -30,7 +30,7 @@ Adds GovUK templates, css and other tools for Django based service
 
 ### MoJ Rails 5 template (simple)
 
-Use the [MoJ Rails 5 template](https://github.com/ministryofjustice/moj_rails_template) to commission a licensed Rails 5 project with 100% SimpleCov coverage, RSpec, mutation testing, brakeman, rubocop, optional documentary comment scrubbing, a CircleCI configuration, etc. 
+Use the [MoJ Rails 5 template](https://github.com/ministryofjustice/moj_rails_template) to commission a licensed Rails 5 project with 100% SimpleCov coverage, RSpec, mutation testing, brakeman, rubocop, optional documentary comment scrubbing, a CircleCI configuration, etc.
 
 ### GOV.UK elements stylesheets gem
 
@@ -93,3 +93,19 @@ Available from [https://github.com/ministryofjustice/postcodeinfo](https://githu
 A pair of docker containers, and a docker compose file, that provides a REST(ish) interface to a ClamAV malware scanner service
 
 Available from [https://github.com/ministryofjustice/malware-scanner-service](https://github.com/ministryofjustice/malware-scanner-service)
+
+### Mailcatcher container
+
+Provides an instance of [mailcatcher](https://mailcatcher.me/), listening
+for SMTP connections on port 1025 and UI connections on port 1080.
+
+There is no authoritative mailcatcher container and existing containers
+vary wildly in size and are frequently not kept up-to-date. This is a
+very simple, small container that can be easily maintained within the
+MoJ.
+
+Available from
+[https://github.com/ministryofjustice/mailcatcher](https://github.com/ministryofjustice/mailcatcher)
+and
+[https://hub.docker.com/r/ministryofjustice/mailcatcher/](https://hub.docker.com/r/ministryofjustice/mailcatcher/)
+
