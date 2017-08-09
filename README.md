@@ -93,19 +93,3 @@ Available from [https://github.com/ministryofjustice/postcodeinfo](https://githu
 A pair of docker containers, and a docker compose file, that provides a REST(ish) interface to a ClamAV malware scanner service
 
 Available from [https://github.com/ministryofjustice/malware-scanner-service](https://github.com/ministryofjustice/malware-scanner-service)
-
-### Mailcatcher container
-
-Provides an instance of [mailcatcher](https://mailcatcher.me/), listening
-for SMTP connections on port 1025 and UI connections on port 1080.
-
-There is no authoritative mailcatcher container and existing containers
-vary wildly in size and are frequently not kept up-to-date. This is a
-very simple, small container that can be easily maintained within the
-MoJ.
-
-Available from
-[https://github.com/ministryofjustice/mailcatcher](https://github.com/ministryofjustice/mailcatcher)
-and
-[https://hub.docker.com/r/ministryofjustice/mailcatcher/](https://hub.docker.com/r/ministryofjustice/mailcatcher/)
-
