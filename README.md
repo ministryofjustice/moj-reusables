@@ -21,8 +21,18 @@ Feedback form that submits to Zendesk
 
 [https://github.com/ministryofjustice/django-zendesk-tickets](https://github.com/ministryofjustice/django-zendesk-tickets)
 
+### django-govuk-template
+Adds GOV.UK templates, css and other components from GDS's packages
+
+[https://github.com/ministryofjustice/django-govuk-template](https://github.com/ministryofjustice/django-govuk-template)
+
+### django-govuk-forms
+Allows Django forms to be output with the correct HTML to be styled by GOV.UK css (e.g. from `django-govuk-template`) 
+
+[https://github.com/ministryofjustice/django-govuk-forms](https://github.com/ministryofjustice/django-govuk-forms)
+
 ### django-gov
-Adds GovUK templates, css and other tools for Django based service
+(DEPRECATED) Adds GovUK templates, css and other tools for Django based service
 
 [https://github.com/ministryofjustice/django-gov](https://github.com/ministryofjustice/django-gov)
 
