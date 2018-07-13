@@ -82,6 +82,11 @@ Python package for reading [Open Register](http://www.openregister.org/) data cu
 
 Ruby gem providing an API client for Postcode Service [https://github.com/ministryofjustice/postcodeinfo-client-ruby](https://github.com/ministryofjustice/postcodeinfo-client-ruby)
 
+### LAA Fee Calculator client
+
+Ruby gem providing a client for the LAA Fee Calculator API. Use the [LAA fee calculator client gem](https://github.com/ministryofjustice/laa-fee-calculator-client), hosted on [Rubygems.org](https://rubygems.org/gems/laa-fee-calculator-client), to simplify calling the [LAA Fee Calculator API](https://github.com/ministryofjustice/laa-fee-calculator). The API provides calculation of legal aid fees for advocates and litigators in criminal cases.
+
+
 ### String Scrubber
 
 Ruby gem that prevents `#to_json` calls on ASCII strings that have been incorrectly re-encoded from borking the calling application (mainly happens because of the UTF BOM-Byte Order Mark). [https://github.com/ministryofjustice/string_scrubber](https://github.com/ministryofjustice/string_scrubber)
