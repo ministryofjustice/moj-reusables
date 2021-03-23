@@ -126,4 +126,4 @@ and
 
 ### SonarQube
 
-SonarQube is a tool for continuous inspection of code quality. There are several versions of SonarQube ranging from free to price ranged versions. If using the free version (community edition) one can expect limitations of the tool. [These scripts](https://github.com/ministryofjustice/laa-sonarqube-reusable-scripts) can help relay the feedback produced in SonarQube directly onto Github closing the feedback loop and call for attention by the developers.
+SonarQube is a tool for continuous inspection of code quality. Using the free version (community edition) there are certain limitations such as PR decorations and branch specific analysis. [These scripts](https://github.com/ministryofjustice/laa-sonarqube-reusable-scripts) can help bridge the gap for such features.
