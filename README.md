@@ -124,3 +124,6 @@ Available from
 and
 [https://hub.docker.com/r/ministryofjustice/mailcatcher/](https://hub.docker.com/r/ministryofjustice/mailcatcher/)
 
+### SonarQube
+
+SonarQube is a tool for continuous inspection of code quality. Using the free version (community edition) there are certain limitations such as PR decorations and branch specific analysis. [These scripts](https://github.com/ministryofjustice/laa-sonarqube-reusable-scripts) can help bridge the gap for such features.
